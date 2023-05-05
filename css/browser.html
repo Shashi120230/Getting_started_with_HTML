@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Browser">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Browser's Information</title><!DOCTYPE html>
+    </head>
+    <body>
+        <script>
+            document.write("<center></p><table border=1 cellpadding=2><tr><td>");
+            document.write("<center><b>", navigator.appName,"</b>");
+            document.write("</td></tr><tr><td><p>");
+            document.write("<center></p><table border=1 cellpadding=2><tr>");
+            document.write("</p><td>Code Name: </td><td><center>");
+            document.write("<b>", navigator.appCodeName,"</td></tr><p>");
+            document.write("</p><tr><td>Version: </td><td><center>");
+            document.write("<b>",navigator.appVersion,"</td></tr><p>");
+            document.write("</p><tr><td>Platform: </td><td><center>");
+            document.write("<b>", navigator.oscpu,"</td></tr><p>");
+            document.write("</p><tr><td>Pages Viewed: </td><td><center>");
+            document.write("<b>", history.length," </td></tr><p>");
+            document.write("</p><tr><td>Java enabled: </td><td><center><b>");
+            if (navigator.javaEnabled()) 
+                document.write("sure is!</td></tr><p>");
+            else 
+                document.write("not today</td></tr><p>");
+            document.write("</p><tr><td>Screen Resolution: </td><td><center>");
+            document.write("<b>",screen.width," x ",screen.height,"</td></tr><p>");
+            document.write("</table></tr></td></table><p></center>");
+        </script>
+    </body>
+</html>    
